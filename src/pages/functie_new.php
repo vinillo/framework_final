@@ -9,4 +9,5 @@ $mysqli = new mysqli("localhost", "root", "kippen7", "db_model");
 $mysqli->query("insert into `functie` (`functie_naam`, `scenario`,
  `risico_factor`, `created`, `ip`) values('$fNaam','$scenario','$risco',NOW(),'$remote_ip')
 ");
+header("Location: functie");
 echo "Thx! inserted";
